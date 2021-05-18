@@ -1,0 +1,307 @@
+@import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+.dark {
+  background-color: #242b2e !important;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  box-shadow: -3px 5px 20px 6px rgba(79, 75, 75, 0.92) inset;
+  -webkit-box-shadow: -3px 5px 20px 6px rgba(79, 75, 75, 0.92) inset;
+  -moz-box-shadow: -3px 5px 20px 6px rgba(79, 75, 75, 0.92) inset;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #35bdd0;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ff4331;
+}
+
+.scrollbar {
+  margin-left: 30px;
+  float: left;
+  height: 300px;
+  width: 65px;
+  background: #f5f5f5;
+  overflow-y: scroll;
+  margin-bottom: 25px;
+}
+
+.force-overflow {
+  min-height: 450px;
+}
+
+/*
+ *  STYLE 1
+ */
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #6f00ed;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px #6f00ed;
+  border-radius: 10px;
+  background-color: #758283;
+  border-left: 0.5px solid #242b2e;
+  border-right: 0.5px solid #242b2e;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  -webkit-box-shadow: inset 0 0 px #ad1457;
+  background-color: #ff9347;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: "Itim", cursive !important;
+}
+body {
+  font-family: "Itim", cursive !important;
+  /* background-color: #7f5a83 !important;
+  background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 84%) !important; */
+  height: auto !important;
+  background-color: #f9ea8f;
+  background-image: linear-gradient(315deg, #f9ea8f 0%, #aff1da 84%);
+}
+.logo {
+  color: #51e1ed !important;
+}
+.nav-link {
+  padding: 20px 0px;
+  margin: 0px 20px;
+  display: inline-block;
+  position: relative;
+}
+.nav-link:hover {
+  opacity: 1;
+}
+
+.nav-link::before {
+  transition: 300ms;
+  height: 3px;
+  content: "";
+  position: absolute;
+  background-color: #51e1ed;
+}
+
+.nav-link-ltr::before {
+  width: 0%;
+  bottom: 00px;
+}
+
+.nav-link-ltr:hover::before {
+  width: 90%;
+}
+
+.handles {
+  color: white;
+  margin: 10px 20px;
+  font-size: 20px;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+.handles:hover {
+  font-size: 30px;
+  color: red;
+}
+
+.card {
+  box-shadow: -3px 5px 20px 6px rgba(142, 139, 139, 0.92);
+  -webkit-box-shadow: -3px 5px 20px 6px rgba(142, 139, 139, 0.92);
+  -moz-box-shadow: -3px 5px 20px 6px rgba(142, 139, 139, 0.92);
+}
+
+.bg-successs {
+  background-color: #28a746af;
+}
+
+.fw-6 {
+  font-weight: 600 !important;
+}
+
+.con {
+  /* background-color: #d9d9d9;
+  background-image: linear-gradient(315deg, #d9d9d9 0%, #f6f2f2 74%); */
+
+  background-color: #ffffb5;
+  background-image: linear-gradient(315deg, #ffff95 0%, #7cd8ff 94%);
+}
+
+.hov-op:hover {
+  transition: all 2s;
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  -webkit-transition: all 2s;
+  -moz-transition: all 2s;
+  -ms-transition: all 2s;
+  -o-transition: all 2s;
+}
+.gallery-item {
+  /* Minimum width of 24rem and grow to fit available space */
+  flex: 1 0 24rem;
+  /* Margin value should be half of grid-gap value as margins on flex items don't collapse */
+  margin: 1rem;
+  box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+}
+
+.gallery-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 400ms ease-out;
+}
+
+.gallery-image:hover {
+  transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+  -moz-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  -o-transform: scale(1.3);
+  filter: brightness(50%);
+  -webkit-filter: brightness(50%);
+}
+
+.vs {
+  font-family: "Indie Flower", cursive;
+  color: white;
+  z-index: 99 !important;
+}
+.vs:hover {
+  cursor: default;
+  color: white;
+  z-index: 99 !important;
+}
+
+.carousel-item img {
+    filter: brightness(50%);
+  -webkit-filter: brightness(50%);
+}
+
+.carousel-item img:hover {
+
+  filter: brightness(100%);
+  -webkit-filter: brightness(100%);
+}
+.carousel-caption {
+  cursor: default;
+}
+.navbar {
+  box-shadow: 1px 10px 12px 0px rgba(0, 0, 0, 0.9);
+  -webkit-box-shadow: 1px 10px 12px 0px rgba(0, 0, 0, 0.9);
+  -moz-box-shadow: 1px 10px 12px 0px rgba(0, 0, 0, 0.9);
+}
+
+/* Carl Kernel Css */
+.cht{
+	font-family: "Indie Flower", cursive !important;
+}
+.banner img {
+  object-fit: cover;
+}
+.navs {
+  margin: -12vh 10vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navs div {
+  box-shadow: -4px 16px 23px -5px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -4px 16px 23px -5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -4px 16px 23px -5px rgba(0, 0, 0, 0.75);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.navs div:hover,
+.navs div a:hover {
+  color: teal;
+}
+.navs div i {
+  font-size: 30px;
+}
+.navs div a {
+	font-size:30px;
+  color: #242b2e;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 1398px) {
+  .navs {
+    margin: -5vh 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navs div {
+    width: 70vw;
+    margin: 1vh 0px;
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  .carousel-caption {
+     display: visible !important;
+	 position: absolute !important;
+  }
+  .ct{
+	  font-size:12px!important;
+  }
+  .cht{
+	  font-size:20px;
+	  font-family: "Itim", cursive !important;
+  }
+  .d-none{
+	  display: block!important;
+	  visibility: visible !important;
+  }
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
