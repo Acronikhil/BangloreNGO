@@ -41,27 +41,27 @@
                             class="sr-only">(current)</span></a>
                 </li> -->
                 <li class="nav-item">
-                    <a class="nav-link nav-link-ltr" href="#">Grooming <span class="sr-only">(current)</span></a>
+                    <a class="nav-link nav-link-ltr" href="#groom">Grooming <span class="sr-only">(current)</span></a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link nav-link-ltr" href="#services">Pets Hotel</a>
+                    <a class="nav-link nav-link-ltr" href="#hotel">Pets Hotel</a>
                 </li>
 
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <a class="nav-link nav-link-ltr" href="#about">Doggy Day Camp</a>
+                </li> -->
+
+                <li class="nav-item">
+                    <a class="nav-link nav-link-ltr" href="#training">Dog Training</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link nav-link-ltr" href="#contact">Dog Training</a>
+                    <a class="nav-link nav-link-ltr" href="#veterinary">Veterinary Care</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link nav-link-ltr" href="#contact">Veterinary Care</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link nav-link-ltr" href="#contact">Adoption</a>
+                    <a class="nav-link nav-link-ltr" href="#adopt">Adoption</a>
                 </li>
                 <!-- <li class="nav-item">
                     <a class="nav-link disabled nav-link-ltr" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
@@ -100,19 +100,18 @@
                 <div class="accordion accordion-flush text-center" id="accordionFlushExample">
                     <div class="accordion-item ">
                         <h2 class="accordion-header" id="flush-headingOne">
-                            <button class="accordion-button w3-xlarge collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapseOne" aria-expanded="false"
-                                aria-controls="flush-collapseOne"><i
-                                    class="material-icons w3-xxlarge">content_cut</i><br>
+                            <button id='groom' class="accordion-button w3-xlarge collapsed" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#grooming" aria-expanded="false"
+                                aria-controls="grooming"><i class="material-icons w3-xxlarge">content_cut</i><br>
                                 Grooming
                             </button>
                         </h2>
-                        <div id="flush-collapseOne" class="accordion-collapse collapse"
-                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div id="grooming" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                            data-bs-parent="#accordionFlushExample">
                             <div class="accordion-body">
                                 <div class="card mx-auto border-info mb-3" style="max-width: 18rem;">
                                     <div class="card-header bg-transparent border-info w3-text-teal">
-                                        <h4>GET THE BEST PROFESSIONAL DOG GROOMING SERVICES</h4>
+                                        <h4 id="groom">GET THE BEST PROFESSIONAL DOG GROOMING SERVICES</h4>
                                     </div>
                                     <div class="card-body ">
                                         <h5 class="card-title"></h5>
@@ -183,15 +182,15 @@
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="flush-headingTwo">
-                            <button class="accordion-button w3-xlarge collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
-                                aria-controls="flush-collapseTwo">
+                            <button id='hotel' class="accordion-button w3-xlarge collapsed" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#petHotel" aria-expanded="false"
+                                aria-controls="petHotel">
                                 <i class="material-icons w3-xxlarge ">cottage</i><br>Pet
                                 Hotel
                             </button>
                         </h2>
-                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
-                            aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                        <div id="petHotel" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                            data-bs-parent="#accordionFlushExample">
                             <div class="accordion-body">
                                 <div class="card mx-auto border-info mb-3" style="max-width: 18rem;">
                                     <div class="card-header bg-transparent border-info w3-text-teal">
@@ -355,14 +354,14 @@
                     </div> -->
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="flush-headingFour">
-                            <button class="accordion-button w3-xlarge collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapseFour" aria-expanded="false"
-                                aria-controls="flush-collapseFour"><i class="material-icons w3-xxlarge">school</i><br>
+                            <button id='training' class="accordion-button w3-xlarge collapsed" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#dogTraining" aria-expanded="false"
+                                aria-controls="dogTraining"><i class="material-icons w3-xxlarge">school</i><br>
                                 Dog Training
                             </button>
                         </h2>
-                        <div id="flush-collapseFour" class="accordion-collapse collapse"
-                            aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                        <div id="dogTraining" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
+                            data-bs-parent="#accordionFlushExample">
                             <div class="accordion-body">
                                 <div class="card mx-auto border-info mb-3" style="max-width: 18rem;">
                                     <div class="card-header bg-transparent border-info w3-text-teal">
@@ -505,15 +504,15 @@
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="flush-headingFive">
-                            <button class="accordion-button w3-xlarge collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapseFive" aria-expanded="false"
-                                aria-controls="flush-collapseFive"><i
+                            <button id='veterinary' class="accordion-button w3-xlarge collapsed" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#veterinaryCare" aria-expanded="false"
+                                aria-controls="veterinaryCare"><i
                                     class="material-icons w3-xxlarge">medical_services</i><br>
                                 Veterinary Care
                             </button>
                         </h2>
-                        <div id="flush-collapseFive" class="accordion-collapse collapse"
-                            aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                        <div id="veterinaryCare" class="accordion-collapse collapse" aria-labelledby="flush-headingFive"
+                            data-bs-parent="#accordionFlushExample">
                             <div class="accordion-body">
                                 <div class="card mx-auto border-info mb-3" style="max-width: 18rem;">
                                     <div class="card-header bg-transparent border-info w3-text-teal">
@@ -538,15 +537,14 @@
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="flush-headingSix">
-                            <button class="accordion-button w3-xlarge collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapseSix" aria-expanded="false"
-                                aria-controls="flush-collapseSix"><i
-                                    class="material-icons w3-xxlarge ">child_friendly</i><br>
+                            <button id='adopt' class="accordion-button w3-xlarge collapsed" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#adoption" aria-expanded="false"
+                                aria-controls="adoption"><i class="material-icons w3-xxlarge ">child_friendly</i><br>
                                 Adoption
                             </button>
                         </h2>
-                        <div id="flush-collapseSix" class="accordion-collapse collapse"
-                            aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+                        <div id="adoption" class="accordion-collapse collapse" aria-labelledby="flush-headingSix"
+                            data-bs-parent="#accordionFlushExample">
                             <div class="accordion-body">
                                 <div class="card mx-auto border-info mb-3" style="max-width: 18rem;">
                                     <div class="card-header bg-transparent border-info w3-text-teal">
