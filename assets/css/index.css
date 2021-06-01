@@ -83,6 +83,7 @@ body {
 }
 .logo {
   color: #51e1ed !important;
+  text-transform: uppercase !important;
 }
 .nav-link {
   padding: 20px 0px;
@@ -114,7 +115,7 @@ body {
 .handles {
   color: white;
   margin: 10px 20px;
-  font-size: 20px;
+  font-size: 18px;
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
@@ -122,7 +123,7 @@ body {
   -o-transition: all 0.5s;
 }
 .handles:hover {
-  font-size: 30px;
+  font-size: 22px;
   color: red;
 }
 
@@ -199,12 +200,11 @@ body {
 }
 
 .carousel-item img {
-    filter: brightness(50%);
+  filter: brightness(50%);
   -webkit-filter: brightness(50%);
 }
 
 .carousel-item img:hover {
-
   filter: brightness(100%);
   -webkit-filter: brightness(100%);
 }
@@ -218,12 +218,10 @@ body {
 }
 
 /* Carl Kernel Css */
-.cht{
-	font-family: "Indie Flower", cursive !important;
+.cht {
+  font-family: "Indie Flower", cursive !important;
 }
-.banner img {
-  object-fit: cover;
-}
+
 .navs {
   margin: -12vh 10vw;
   display: flex;
@@ -248,7 +246,7 @@ body {
   font-size: 30px;
 }
 .navs div a {
-	font-size:30px;
+  font-size: 30px;
   color: #242b2e;
   text-decoration: none;
 }
@@ -267,22 +265,21 @@ body {
   }
 }
 
-
 @media screen and (max-width: 767px) {
   .carousel-caption {
-     display: visible !important;
-	 position: absolute !important;
+    display: visible !important;
+    position: absolute !important;
   }
-  .ct{
-	  font-size:12px!important;
+  .ct {
+    font-size: 12px !important;
   }
-  .cht{
-	  font-size:20px;
-	  font-family: "Itim", cursive !important;
+  .cht {
+    font-size: 20px;
+    font-family: "Itim", cursive !important;
   }
-  .d-none{
-	  display: block!important;
-	  visibility: visible !important;
+  .d-none {
+    display: block !important;
+    visibility: visible !important;
   }
 }
 
@@ -304,4 +301,45 @@ body {
 
 #myBtn:hover {
   background-color: #555;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: red;
+}
+.accordion-button {
+  display: block !important;
+  justify-content: center !important;
+  text-align: center !important;
+}
+.banner img {
+  object-fit: cover;
+  /* height: 70vh; */
+}
+.banner {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.pos {
+  margin-top: -40px;
+}
+.grooming-container {
+  flex: 1;
+  justify-content: space-evenly;
+  align-items: center;
+
+  flex-direction: row !important;
+}
+.grooming-container-inners {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row !important;
+  text-transform: capitalize;
 }

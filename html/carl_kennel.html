@@ -12,10 +12,7 @@
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" />
     <!-- animation -->
-	<link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- W3Css -->
     <link rel="stylesheet" href="../assets/css/w3.css" />
@@ -23,13 +20,15 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
-    <title>Carlsecra</title>
+    <title class="text-uppercase">CARLSECRA</title>
 </head>
 
 <body class="w3-display-container" style="height: 100vh;">
     <nav class="navbar sticky-top navbar-expand-lg navbar-dark w3-large dark">
-        <a class="navbar-brand font-weight-bold w3-xlarge logo" href="./index.html">Carlsecra foundation</a>
+        <a class="navbar-brand font-weight-bold w3-large logo" href="../index.html">Carlsecra foundation</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
             aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -37,10 +36,10 @@
 
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav mx-auto mt-2 mt-lg-0">
-                <li class="nav-item active">
-                    <a class="nav-link disabled w3-text-light-green w3-xlarge" href="#">Services <i
-                            class="fas fa-hand-point-right"></i><span class="sr-only">(current)</span></a>
-                </li>
+                <!-- <li class="nav-item active">
+                    <a class="nav-link disabled w3-text-light-green w3-small" href="#">Services <span
+                            class="sr-only">(current)</span></a>
+                </li> -->
                 <li class="nav-item">
                     <a class="nav-link nav-link-ltr" href="#">Grooming <span class="sr-only">(current)</span></a>
                 </li>
@@ -75,12 +74,12 @@
             </div>
         </div>
     </nav>
-	<button class="animate__animated animate__slow animate__tada animate__infinite" onclick="topFunction()" id="myBtn" title="Go to top"><i class=" fas fa-arrow-up mr-2"></i>Go To Top</button>
+    <button class="animate__animated animate__slow animate__tada animate__infinite" onclick="topFunction()" id="myBtn"
+        title="Go to top"><i class=" fas fa-arrow-up mr-2"></i>Go To Top</button>
     <div class="container-fluid p-0 m-0">
         <div class="banner">
-            <img class="img-fluid" src="../assets/images/db.jpg"
-                alt="...">
-            <div class="navs">
+            <img class="img-fluid" src="../assets/images/db.jpg" alt="...">
+            <!-- <div class="navs">
                 <div class="card text-center w3-xxlarge w3-hover-text-teal w3-hover-border-teal"><i
                         class="material-icons ">content_cut</i>
                     <a href="#" class="stretched-link w3-hover-text-teal">Grooming</a>
@@ -96,15 +95,495 @@
                 </div>
                 <div class="card text-center w3-xxlarge"><i class="material-icons ">child_friendly</i><a href="#"
                         class="stretched-link">Addoption</a></div>
-            </div>
+            </div> -->
+            <section class="container-sm pos card p-0">
+                <div class="accordion accordion-flush text-center" id="accordionFlushExample">
+                    <div class="accordion-item ">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button w3-xlarge collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne"><i
+                                    class="material-icons w3-xxlarge">content_cut</i><br>
+                                Grooming
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <div class="card mx-auto border-info mb-3" style="max-width: 18rem;">
+                                    <div class="card-header bg-transparent border-info w3-text-teal">
+                                        <h4>GET THE BEST PROFESSIONAL DOG GROOMING SERVICES</h4>
+                                    </div>
+                                    <div class="card-body ">
+                                        <h5 class="card-title"></h5>
+                                        <p class="card-text text-justify">Carlsecra presents a full range of dog
+                                            grooming services
+                                            replete with
+                                            all the
+                                            essentials to take care of your furry friend the right way. While it is
+                                            vital to pay
+                                            attention to basic hygiene such as brushing, bathing, clipping nails,
+                                            etc., it is
+                                            also essential to understand the procedure.</p>
+                                        <div>
+
+                                        </div>
+                                    </div>
+                                    <div class="card-footer bg-transparent border-info">
+                                        <h5 class="w3-text-teal card-header bg-transparent border-info "><i
+                                                class="material-icons w3-xxlarge ">pets</i><br>
+                                            Services We Provide</h5>
+                                        <div class="grooming-container my-3">
+                                            <div class="grooming-container-inners">
+                                                <i class="material-icons w3-text-teal">
+                                                    task_alt
+                                                </i>&nbsp; Shampoo bath
+
+                                            </div>
+                                            <div class="grooming-container-inners">
+                                                <i class="material-icons w3-text-teal">
+                                                    task_alt
+                                                </i>&nbsp; Dog combing
+
+                                            </div>
+                                            <div class="grooming-container-inners">
+                                                <i class="material-icons w3-text-teal">
+                                                    task_alt
+                                                </i>&nbsp; Hair dry
+
+                                            </div>
+                                            <div class="grooming-container-inners">
+                                                <i class="material-icons w3-text-teal">
+                                                    task_alt
+                                                </i>&nbsp; Nail cutting
+
+                                            </div>
+                                            <div class="grooming-container-inners">
+                                                <i class="material-icons w3-text-teal">
+                                                    task_alt
+                                                </i>&nbsp; Ears cleaning Deworming
+
+                                            </div>
+                                            <div class="grooming-container-inners">
+                                                <i class="material-icons w3-text-teal">
+                                                    task_alt
+                                                </i>&nbsp; Deworming
+
+                                            </div>
+                                        </div>
+                                        <div class="card-footer bg-transparent border-info"><button type="button"
+                                                class="btn btn-outline-primary"></button></div>
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button w3-xlarge collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                aria-controls="flush-collapseTwo">
+                                <i class="material-icons w3-xxlarge ">cottage</i><br>Pet
+                                Hotel
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <div class="card mx-auto border-info mb-3" style="max-width: 18rem;">
+                                    <div class="card-header bg-transparent border-info w3-text-teal">
+                                        <h4>CARLSECRA Pets Hotel – Caring With A Passion</h4>
+                                    </div>
+                                    <div class="card-body ">
+                                        <h5 class="card-title"></h5>
+                                        <p class="card-text text-justify">CARLSECRA presents a comfortable cageless dog
+                                            boarding service to make your pet feel comfortable even away from home. With
+                                            the help of dog trainers and dog-owners, we ensure that your pet is
+                                            well-taken care of at our boarding service.</p>
+                                        <div>
+
+                                        </div>
+                                    </div>
+                                    <div class="card-footer bg-transparent border-info">
+                                        <h5 class="w3-text-teal card-header bg-transparent border-info "><i
+                                                class="material-icons w3-xxlarge ">pets</i><br>
+                                            Services We Provide</h5>
+                                        <div class="grooming-container my-3">
+                                            <div class="grooming-container-inners">
+                                                <i class="material-icons w3-text-teal">
+                                                    task_alt
+                                                </i>&nbsp; Hygnic place
+
+                                            </div>
+                                            <div class="grooming-container-inners">
+                                                <i class="material-icons w3-text-teal">
+                                                    task_alt
+                                                </i>&nbsp; 15 min walk(Mon and Eve)
+
+                                            </div>
+                                            <div class="grooming-container-inners">
+                                                <i class="material-icons w3-text-teal">
+                                                    task_alt
+                                                </i>&nbsp; Combing
+
+                                            </div>
+                                            <div class="grooming-container-inners">
+                                                <i class="material-icons w3-text-teal">
+                                                    task_alt
+                                                </i>&nbsp; Home cook food
+
+                                            </div>
+                                            <div class="grooming-container-inners">
+                                                <i class="material-icons w3-text-teal">
+                                                    task_alt
+                                                </i>&nbsp; 2 times feeding
+
+                                            </div>
+                                            <div class="grooming-container-inners">
+                                                <i class="material-icons w3-text-teal">
+                                                    task_alt
+                                                </i>&nbsp; 24/7 care taker
+
+                                            </div>
+                                            <div class="grooming-container-inners">
+                                                <i class="material-icons w3-text-teal">
+                                                    task_alt
+                                                </i>&nbsp; No cage - No tie
+
+                                            </div>
+                                            <div class="grooming-container-inners">
+                                                <i class="material-icons w3-text-teal">
+                                                    task_alt
+                                                </i>&nbsp; Bathing
+
+                                            </div>
+                                        </div>
+                                        <div class="card-footer bg-transparent border-info"><button type="button"
+                                                class="btn btn-outline-primary"></button></div>
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed w3-xlarge" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree"><i class="fas fa-bone w3-xxlarge"></i><br>
+                                Dog Day Camp
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <div class="card mx-auto border-info mb-3" style="max-width: 18rem;">
+                                    <div class="card-header bg-transparent border-info w3-text-teal">
+                                        <h4>GET THE BEST PROFESSIONAL DOG GROOMING SERVICES</h4>
+                                    </div>
+                                    <div class="card-body ">
+                                        <h5 class="card-title"></h5>
+                                        <p class="card-text text-justify">Carlsecra presents a full range of dog
+                                            grooming services
+                                            replete with
+                                            all the
+                                            essentials to take care of your furry friend the right way. While it is
+                                            vital to pay
+                                            attention to basic hygiene such as brushing, bathing, clipping nails,
+                                            etc., it is
+                                            also essential to understand the procedure.</p>
+                                        <div>
+
+                                        </div>
+                                    </div>
+                                    <div class="card-footer bg-transparent border-info">
+                                        <h5 class="w3-text-teal card-header bg-transparent border-info "><i
+                                                class="material-icons w3-xxlarge ">pets</i><br>
+                                            Services We Provide</h5>
+                                        <div class="grooming-container my-3">
+                                            <div class="grooming-container-inners">
+                                                <i class="material-icons w3-text-teal">
+                                                    task_alt
+                                                </i>&nbsp; Shampoo bath
+
+                                            </div>
+                                            <div class="grooming-container-inners">
+                                                <i class="material-icons w3-text-teal">
+                                                    task_alt
+                                                </i>&nbsp; Dog combing
+
+                                            </div>
+                                            <div class="grooming-container-inners">
+                                                <i class="material-icons w3-text-teal">
+                                                    task_alt
+                                                </i>&nbsp; Hair dry
+
+                                            </div>
+                                            <div class="grooming-container-inners">
+                                                <i class="material-icons w3-text-teal">
+                                                    task_alt
+                                                </i>&nbsp; Nail cutting
+
+                                            </div>
+                                            <div class="grooming-container-inners">
+                                                <i class="material-icons w3-text-teal">
+                                                    task_alt
+                                                </i>&nbsp; Ears cleaning Deworming
+
+                                            </div>
+                                            <div class="grooming-container-inners">
+                                                <i class="material-icons w3-text-teal">
+                                                    task_alt
+                                                </i>&nbsp; Deworming
+
+                                            </div>
+                                        </div>
+                                        <div class="card-footer bg-transparent border-info"><button type="button"
+                                                class="btn btn-outline-primary"></button></div>
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingFour">
+                            <button class="accordion-button w3-xlarge collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                aria-controls="flush-collapseFour"><i class="material-icons w3-xxlarge">school</i><br>
+                                Dog Training
+                            </button>
+                        </h2>
+                        <div id="flush-collapseFour" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <div class="card mx-auto border-info mb-3" style="max-width: 18rem;">
+                                    <div class="card-header bg-transparent border-info w3-text-teal">
+                                        <h4>GET THE BEST PROFESSIONAL DOG GROOMING SERVICES</h4>
+                                    </div>
+                                    <div class="card-body ">
+                                        <h5 class="card-title"></h5>
+                                        <p class="card-text text-justify">Carlsecra presents a full range of dog
+                                            grooming services
+                                            replete with
+                                            all the
+                                            essentials to take care of your furry friend the right way. While it is
+                                            vital to pay
+                                            attention to basic hygiene such as brushing, bathing, clipping nails,
+                                            etc., it is
+                                            also essential to understand the procedure.</p>
+                                        <div>
+
+                                        </div>
+                                    </div>
+                                    <div class="card-footer bg-transparent border-info">
+                                        <h5 class="w3-text-teal card-header bg-transparent border-info "><i
+                                                class="material-icons w3-xxlarge ">pets</i><br>
+                                            Services We Provide</h5>
+                                        <div class="grooming-container my-3">
+                                            <div class="grooming-container-inners">
+                                                <i class="material-icons w3-text-teal">
+                                                    task_alt
+                                                </i>&nbsp; Heel walk
+
+                                            </div>
+                                            <div class="grooming-container-inners">
+                                                <i class="material-icons w3-text-teal">
+                                                    task_alt
+                                                </i>&nbsp; Stop
+
+                                            </div>
+                                            <div class="grooming-container-inners">
+                                                <i class="material-icons w3-text-teal">
+                                                    task_alt
+                                                </i>&nbsp; Sit
+
+                                            </div>
+                                            <div class="grooming-container-inners">
+                                                <i class="material-icons w3-text-teal">
+                                                    task_alt
+                                                </i>&nbsp; Standstay
+
+                                            </div>
+                                            <div class="grooming-container-inners">
+                                                <i class="material-icons w3-text-teal">
+                                                    task_alt
+                                                </i>&nbsp; Come
+
+                                            </div>
+                                            <div class="grooming-container-inners">
+                                                <i class="material-icons w3-text-teal">
+                                                    task_alt
+                                                </i>&nbsp; Down
+
+                                            </div>
+                                            <div class="grooming-container-inners">
+                                                <i class="material-icons w3-text-teal">
+                                                    task_alt
+                                                </i>&nbsp; Down To Sit
+
+                                            </div>
+                                            <div class="grooming-container-inners">
+                                                <i class="material-icons w3-text-teal">
+                                                    task_alt
+                                                </i>&nbsp; Shake Hand
+
+
+                                            </div>
+                                            <div class="grooming-container-inners">
+                                                <i class="material-icons w3-text-teal">
+                                                    task_alt
+                                                </i>&nbsp; Distance control
+
+                                            </div>
+                                            <div class="grooming-container-inners">
+                                                <i class="material-icons w3-text-teal">
+                                                    task_alt
+                                                </i>&nbsp; Rest
+
+                                            </div>
+                                            <div class="grooming-container-inners">
+                                                <i class="material-icons w3-text-teal">
+                                                    task_alt
+                                                </i>&nbsp; Salute
+
+                                            </div>
+                                            <div class="grooming-container-inners">
+                                                <i class="material-icons w3-text-teal">
+                                                    task_alt
+                                                </i>&nbsp; Rest to down
+
+                                            </div>
+                                            <div class="grooming-container-inners">
+                                                <i class="material-icons w3-text-teal">
+                                                    task_alt
+                                                </i>&nbsp; Long stay
+
+                                            </div>
+                                            <div class="grooming-container-inners">
+                                                <i class="material-icons w3-text-teal">
+                                                    task_alt
+                                                </i>&nbsp; Crawl
+
+                                            </div>
+                                            <div class="grooming-container-inners">
+                                                <i class="material-icons w3-text-teal">
+                                                    task_alt
+                                                </i>&nbsp; Roll
+
+                                            </div>
+                                            <div class="grooming-container-inners">
+                                                <i class="material-icons w3-text-teal">
+                                                    task_alt
+                                                </i>&nbsp; Hi-fi
+
+                                            </div>
+                                            <div class="grooming-container-inners">
+                                                <i class="material-icons w3-text-teal">
+                                                    task_alt
+                                                </i>&nbsp; Food resistance
+
+                                            </div>
+
+                                        </div>
+                                        <div class="card-footer bg-transparent border-info"><button type="button"
+                                                class="btn btn-outline-primary"></button></div>
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingFive">
+                            <button class="accordion-button w3-xlarge collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseFive" aria-expanded="false"
+                                aria-controls="flush-collapseFive"><i
+                                    class="material-icons w3-xxlarge">medical_services</i><br>
+                                Veterinary Care
+                            </button>
+                        </h2>
+                        <div id="flush-collapseFive" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <div class="card mx-auto border-info mb-3" style="max-width: 18rem;">
+                                    <div class="card-header bg-transparent border-info w3-text-teal">
+                                        <h4>GET THE BEST PROFESSIONAL DOG GROOMING SERVICES</h4>
+                                    </div>
+                                    <div class="card-body ">
+                                        <h5 class="card-title"></h5>
+                                        <p class="card-text">Carlsecra presents a full range of dog grooming
+                                            services
+                                            replete with
+                                            all the
+                                            essentials to take care of your furry friend the right way. While it is
+                                            vital to pay
+                                            attention to basic hygiene such as brushing, bathing, clipping nails,
+                                            etc., it is
+                                            also essential to understand the procedure.</p>
+                                    </div>
+                                    <div class="card-footer bg-transparent border-info">Footer</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingSix">
+                            <button class="accordion-button w3-xlarge collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseSix" aria-expanded="false"
+                                aria-controls="flush-collapseSix"><i
+                                    class="material-icons w3-xxlarge ">child_friendly</i><br>
+                                Adoption
+                            </button>
+                        </h2>
+                        <div id="flush-collapseSix" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <div class="card mx-auto border-info mb-3" style="max-width: 18rem;">
+                                    <div class="card-header bg-transparent border-info w3-text-teal">
+                                        <h4>GET THE BEST PROFESSIONAL DOG GROOMING SERVICES</h4>
+                                    </div>
+                                    <div class="card-body ">
+                                        <h5 class="card-title"></h5>
+                                        <p class="card-text">Carlsecra presents a full range of dog grooming
+                                            services
+                                            replete with
+                                            all the
+                                            essentials to take care of your furry friend the right way. While it is
+                                            vital to pay
+                                            attention to basic hygiene such as brushing, bathing, clipping nails,
+                                            etc., it is
+                                            also essential to understand the procedure.</p>
+                                    </div>
+                                    <div class="card-footer bg-transparent border-info">Footer</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
         </div>
     </div>
-    <section class="container" style="height: 100vh;">
+    <!-- <section class="container" style="height: 100vh;">
         <h1>Hii</h1>
 
-    </section>
+    </section> -->
 
     <!-- Optional JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
@@ -120,7 +599,7 @@
         (function () {
             'use strict';
             window.addEventListener('load', function () {
-                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                // Fetch all the forms we want to  custom Bootstrap validation styles to
                 var forms = document.getElementsByClassName('needs-validation');
                 // Loop over them and prevent submission
                 var validation = Array.prototype.filter.call(forms, function (form) {
@@ -135,27 +614,27 @@
             }, false);
         })();
     </script>
-	<script>
-//Get the button
-var mybutton = document.getElementById("myBtn");
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
 
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
 
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
 
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
-</script>
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
 </body>
 <footer class="w3-container w3-display-bottom pt-lg-5 w3-center py-3 w3-margin-top" style="background-color: #13171a;">
     <p class="w3-xxlarge logo">Find me on social media.</p>
