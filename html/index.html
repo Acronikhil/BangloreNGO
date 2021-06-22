@@ -11,10 +11,7 @@
         crossorigin="anonymous" />
     <!-- animation -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-	 <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- W3Css -->
     <link rel="stylesheet" href="../assets/css/w3.css" />
     <link rel="stylesheet" href="../assets/css/index.css" />
@@ -146,7 +143,8 @@
         </div>
 
     </section> -->
-	<button class="animate__animated animate__slow animate__tada animate__infinite" onclick="topFunction()" id="myBtn" title="Go to top"><i class=" fas fa-arrow-up mr-2"></i>Go To Top</button>
+    <button class="animate__animated animate__slow animate__tada animate__infinite" onclick="topFunction()" id="myBtn"
+        title="Go to top"><i class=" fas fa-arrow-up mr-2"></i>Go To Top</button>
     <div class="w3-container w3-teal">
         <h1 class="text-center">Gallery</h1>
     </div>
@@ -155,7 +153,7 @@
         <div class="w3-third zoom-effect-container">
             <div class="w3-card gallery-item w3-display-container">
                 <h1 class="w3-display-middle w3-display-hover vs">I Am Text</h1>
-                <img class="gallery-image"
+                <img class="gallery-image" onclick="openModal();currentSlide(1)"
                     src="https://images.pexels.com/photos/6647113/pexels-photo-6647113.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
                     style="width:100%">
                 <div class="w3-container">
@@ -342,27 +340,70 @@
             }, false);
         })();
     </script>
-	<script>
-//Get the button
-var mybutton = document.getElementById("myBtn");
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
 
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
 
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
 
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
-</script>
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <script>
+        // Open the Modal
+        function openModal() {
+            document.getElementById("myModal").style.display = "block";
+        }
+
+        // Close the Modal
+        function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+        }
+
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            captionText.innerHTML = dots[slideIndex - 1].alt;
+        }
+
+    </script>
 </body>
 
 </html>

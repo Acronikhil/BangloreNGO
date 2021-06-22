@@ -72,6 +72,11 @@
 html {
   scroll-behavior: smooth;
   font-family: "Itim", cursive !important;
+  cursor: default;
+  -webkit-user-select: none;
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
+  user-select: none;
 }
 body {
   font-family: "Itim", cursive !important;
@@ -343,3 +348,93 @@ body {
   flex-direction: row !important;
   text-transform: capitalize;
 }
+
+.phone {
+  cursor: pointer;
+  user-select: text !important;
+}
+
+.size {
+  height: 92vh;
+}
+.fit {
+  width: 100vw;
+  object-fit: contain !important;
+}
+
+/* MODAL IMAGE CODE______________________ */
+.main-img img {
+  width: 100% !important;
+  object-fit: contain !important;
+}
+.main-img img,
+.imgs a img {
+  width: 100%;
+  object-fit: cover;
+}
+.imgs2 a img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.imgs3 a img {
+  width: 100%;
+  object-fit: cover;
+}
+.imgs a img {
+  cursor: pointer;
+}
+
+.imgs2 a img {
+  cursor: pointer;
+}
+
+.imgs3 a img {
+  cursor: pointer;
+}
+.imgs a {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 5px;
+}
+.imgs2 a {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 5px;
+}
+.imgs3 a {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 5px;
+}
+/* Fade In Animation */
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn var(--fade-time) ease-in 1 forwards;
+}
+
+/* Media Quearies */
+@media (max-width: 600px) {
+  .imgs a {
+    grid-template-columns: repeat(2, auto);
+  }
+  .imgs2 a {
+    grid-template-columns: repeat(2, auto);
+  }
+  .imgs3 a {
+    grid-template-columns: repeat(2, auto);
+  }
+}
+.contain {
+  object-fit: contain !important;
+}
+/* .img {
+  height: 150px !important;
+} */
