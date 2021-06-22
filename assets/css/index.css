@@ -431,6 +431,9 @@ body {
   .imgs3 a {
     grid-template-columns: repeat(2, auto);
   }
+  .size {
+    height: 600px;
+  }
 }
 .contain {
   object-fit: contain !important;
