@@ -431,10 +431,14 @@ body {
   .imgs3 a {
     grid-template-columns: repeat(2, auto);
   }
+}
+
+@media (min-width: 1024px) {
   .size {
     height: auto;
   }
 }
+
 .contain {
   object-fit: cover !important;
 }
