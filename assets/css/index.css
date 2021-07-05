@@ -71,7 +71,7 @@
 
 html {
   scroll-behavior: smooth;
-  font-family: "Itim", cursive !important;
+  /* font-family: "Itim", cursive !important; */
   cursor: default;
   -webkit-user-select: none;
   -moz-user-select: -moz-none;
@@ -79,7 +79,7 @@ html {
   user-select: none;
 }
 body {
-  font-family: "Itim", cursive !important;
+  /* font-family: "Itim", cursive !important; */
   /* background-color: #7f5a83 !important;
   background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 84%) !important; */
   height: auto !important;
@@ -224,7 +224,7 @@ body {
 
 /* Carl Kernel Css */
 .cht {
-  font-family: "Indie Flower", cursive !important;
+  /* font-family: "Indie Flower", cursive !important; */
 }
 
 .navs {
@@ -436,8 +436,8 @@ body {
   }
 }
 .contain {
-  object-fit: contain !important;
+  object-fit: cover !important;
 }
-/* .img {
+.img {
   height: 150px !important;
-} */
+}
