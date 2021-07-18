@@ -23,9 +23,12 @@
     <title class="text-uppercase">CARLSECRA</title>
 </head>
 
-<body>
+<body onload="LoaderFunction()">
+    <div id="loading"></div>
     <nav class="navbar sticky-top navbar-expand-lg navbar-dark w3-large dark">
-        <a class="navbar-brand font-weight-bold w3-large logo" href=" #">Carlsecra foundation</a>
+        <a class="navbar-brand font-weight-bold w3-large logo" href="">
+            Carlsecra
+            foundation</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
             aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -413,6 +416,22 @@
             document.body.scrollTop = 0;
             document.documentElement.scrollTop = 0;
         }
+        // Loader funcion
+
+        var preloader = document.getElementById("loading");
+        // window.addEventListener('load', function(){
+        // 	preloader.style.display = 'none';
+        // 	})
+
+        function LoaderFunction() {
+            var delayInMilliseconds = 1000; //1 second
+
+            setTimeout(function () {
+                //your code to be executed after 1 second
+                preloader.style.display = 'none';
+            }, delayInMilliseconds);
+
+        };
     </script>
     <script>
         // Content 1 modal
